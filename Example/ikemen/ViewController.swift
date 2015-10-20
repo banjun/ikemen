@@ -7,18 +7,16 @@
 //
 
 import UIKit
+import Ikemen
 
 class ViewController: UIViewController {
+    private let nameLabel = UILabel() ※ {$0.text = "Name"}
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        nameLabel.frame = view.bounds
+        view.addSubview(nameLabel)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
