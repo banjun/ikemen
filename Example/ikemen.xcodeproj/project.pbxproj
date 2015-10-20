@@ -31,7 +31,7 @@
 		2F3BF5FF4D9C0C4BE09847BB /* Pods_ikemen_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ikemen_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C6326B466BEF696296677E /* Pods-ikemen_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ikemen_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ikemen_Example/Pods-ikemen_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4BA353073B8FD338E115F49A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4C809F6441BE137D3A74D570 /* ikemen.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ikemen.podspec; path = ../ikemen.podspec; sourceTree = "<group>"; };
+		4C809F6441BE137D3A74D570 /* ※ikemen.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "※ikemen.podspec"; path = "../※ikemen.podspec"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ikemen_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ikemen_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				4C809F6441BE137D3A74D570 /* ikemen.podspec */,
+				4C809F6441BE137D3A74D570 /* ※ikemen.podspec */,
 				C3410EAA5CF1E106F54C499A /* README.md */,
 				4BA353073B8FD338E115F49A /* LICENSE */,
 			);

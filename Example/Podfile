@@ -2,11 +2,11 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'ikemen_Example', :exclusive => true do
-  pod "ikemen", :path => "../"
+  pod "※ikemen", :path => "../"
 end
 
 target 'ikemen_Tests', :exclusive => true do
-  pod "ikemen", :path => "../"
+  pod "※ikemen", :path => "../"
 
   pod 'Quick', '~> 0.3.1'
   pod 'Nimble'
