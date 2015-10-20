@@ -5,7 +5,7 @@ infix operator ※ {
     precedence 95
 }
 
-public func ※<T>(object: T, modifier: T -> ()) -> T {
+public func ※<T>(object: T, @noescape modifier: T -> ()) -> T {
     modifier(object)
     return object
 }
