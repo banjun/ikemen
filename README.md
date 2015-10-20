@@ -12,6 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ※ikemen introduces operator `※` that works as `Object#tap` in Ruby.
 
 ```swift
+import Ikemen
 let r = Rabbit() ※ {$0.ikemen = true}
 ```
 
