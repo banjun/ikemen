@@ -9,6 +9,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+※ikemen introduces operator `※` that works as `Object#tap` in Ruby.
+
+```swift
+let r = Rabbit() ※ {$0.ikemen = true}
+```
+
 ## Requirements
 
 ## Installation
