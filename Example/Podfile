@@ -1,13 +1,27 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'ikemen_Example', :exclusive => true do
+def import_pods
   pod "※ikemen", :path => "../"
 end
 
-target 'ikemen_Tests', :exclusive => true do
-  pod "※ikemen", :path => "../"
+target :ios do
+  platform :ios, '8.0'
+  link_with 'ikemen_Example'
+  import_pods
+end
 
-  pod 'Quick', '~> 0.3.1'
+target :iostests do
+  platform :ios, '8.0'
+  link_with 'ikemen_Tests'
+  import_pods
+  pod 'Quick'
   pod 'Nimble'
 end
+
+target :osx do
+  platform :osx, '10.11'
+  link_with 'ikemen-Example-osx'
+  import_pods
+end
+

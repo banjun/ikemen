@@ -1,11 +1,11 @@
 PODS:
-  - Nimble (2.0.0)
-  - Quick (0.3.1)
-  - "※ikemen (0.1.0)"
+  - Nimble (3.1.0)
+  - Quick (0.9.0)
+  - "※ikemen (0.1.2)"
 
 DEPENDENCIES:
   - Nimble
-  - Quick (~> 0.3.1)
+  - Quick
   - "※ikemen (from `../`)"
 
 EXTERNAL SOURCES:
@@ -13,8 +13,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 472e75466819eb8c06299233e87c694a9b51328a
-  Quick: 824572d3d198d51e52cf4aa722cebf7e59952a35
-  "※ikemen": 19ea995f3d80a5dec42e4d71845f541eb230092b
+  Nimble: 79d40f4d69d47314229bbabacaa02b8838c779b9
+  Quick: 332eb1da73125a2106dd637424c803f2ae97e4a9
+  "※ikemen": 383f5d91494ed348a0f3943346610e1efa090fee
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
