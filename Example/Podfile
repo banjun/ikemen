@@ -1,27 +1,24 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-def import_pods
+abstract_target 'ikemen' do
   pod "※ikemen", :path => "../"
-end
 
-target :ios do
-  platform :ios, '8.0'
-  link_with 'ikemen_Example'
-  import_pods
-end
+  target 'ikemen_Example' do
+    inherit! :complete
+    platform :ios, '8.0'
 
-target :iostests do
-  platform :ios, '8.0'
-  link_with 'ikemen_Tests'
-  import_pods
-  pod 'Quick'
-  pod 'Nimble'
-end
+    target 'ikemen_Tests' do
+      inherit! :search_paths
 
-target :osx do
-  platform :osx, '10.11'
-  link_with 'ikemen-Example-osx'
-  import_pods
+      pod 'Quick'
+      pod 'Nimble'
+    end
+  end
+
+  target 'ikemen-Example-osx' do
+    inherit! :complete
+    platform :osx, '10.11'
+  end
 end
 

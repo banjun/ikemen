@@ -16,17 +16,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     let nameField = NSTextField() ※ {tf in tf.stringValue = "Name"}
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
 
         if let contentView = window.contentView {
             nameField.frame = contentView.bounds
-            nameField.autoresizingMask = [.ViewWidthSizable, .ViewHeightSizable]
+            nameField.autoresizingMask = [.viewWidthSizable, .viewHeightSizable]
             contentView.addSubview(nameField)
         }
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
 

@@ -1,11 +1,12 @@
 
 
-infix operator ※ {
-    associativity left
-    precedence 95
+infix operator ※: IkemenPrecedence
+precedencegroup IkemenPrecedence {
+    associativity: left
+    higherThan: AssignmentPrecedence
 }
 
-public func ※<T>(object: T, @noescape modifier: T -> ()) -> T {
+public func ※<T>(object: T, modifier: (T) -> ()) -> T {
     modifier(object)
     return object
 }

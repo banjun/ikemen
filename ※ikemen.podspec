@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "※ikemen"
-  s.version          = "0.1.2"
+  s.version          = "0.2.0"
   s.module_name      = "Ikemen"
   s.summary          = "Swift way of Ruby Object#tap"
 
