@@ -11,12 +11,18 @@ import Ikemen
 
 class ViewController: UIViewController {
     private let nameLabel = UILabel() ※ {$0.text = "Name"}
+    private let record = Record() ※ {(r: inout Record) in r.name = "RecordName"}
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         nameLabel.frame = view.bounds
         view.addSubview(nameLabel)
+
+        NSLog("%@", "\(record.name)")
     }
 }
 
+struct Record {
+    var name: String?
+}
