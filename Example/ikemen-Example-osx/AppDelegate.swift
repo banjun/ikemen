@@ -15,21 +15,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     let nameField = NSTextField() ※ {tf in tf.stringValue = "Name"}
+    let record = Record() ※ {(r: inout Record) in r.name = "RecordName"}
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
-
         if let contentView = window.contentView {
             nameField.frame = contentView.bounds
             nameField.autoresizingMask = [.viewWidthSizable, .viewHeightSizable]
             contentView.addSubview(nameField)
         }
+
+        NSLog("%@", "\(record.name)")
     }
+}
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
-    }
-
-
+struct Record {
+    var name: String?
 }
 
