@@ -14,8 +14,8 @@ import Ikemen
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
-    let nameField = NSTextField() ※ {tf in tf.stringValue = "Name"}
-    let record = Record() ※ {(r: inout Record) in r.name = "RecordName"}
+    let nameField = NSTextField() ※ {$0.stringValue = "Name"}
+    let record = Record() ※ {$0.name = "RecordName"}
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if let contentView = window.contentView {
@@ -24,7 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             contentView.addSubview(nameField)
         }
 
-        NSLog("%@", "\(record.name)")
+        NSLog("%@", "\(record.name!)")
     }
 }
 
