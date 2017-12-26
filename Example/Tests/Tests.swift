@@ -1,49 +1,42 @@
-// https://github.com/Quick/Quick
-
 import Quick
 import Nimble
 import Ikemen
 
-class TableOfContentsSpec: QuickSpec {
+class C {
+    var p: Int = 0
+}
+
+struct S {
+    var p: Int = 0
+}
+
+class IkemenSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
-
-            it("can do maths") {
-                expect(1) == 2
+        describe("reference type") {
+            it("modify property") {
+                let c = C() ※ {$0.p = 42}
+                expect(c.p) == 42
             }
+        }
 
-            it("can read") {
-                expect("number") == "string"
+        describe("value type") {
+            it("modify property") {
+                let s = S() ※ {$0.p = 42}
+                expect(s.p) == 42
             }
+        }
 
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
+        describe("reference types nested in value type") {
+            it("modify properties") {
+                let cs: [C] = [C(), C(), C()] ※ {$0[0].p = 42}
+                expect(cs.map {$0.p}) == [42, 0, 0]
             }
-            
-            context("these will pass") {
+        }
 
-                it("can do maths") {
-                    expect(23) == 23
-                }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    DispatchQueue.main.async {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        Thread.sleep(forTimeInterval: 0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
+        describe("value types nested in value type") {
+            it("modify properties") {
+                let ss: [S] = [S(), S(), S()] ※ {$0[0].p = 42}
+                expect(ss.map {$0.p}) == [42, 0, 0]
             }
         }
     }
