@@ -1,0 +1,6 @@
+framework module Pods_ikemen_ikemen_Example {
+  umbrella header "Pods-ikemen-ikemen_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
