@@ -6,6 +6,16 @@ on:
     branches: [ master ]
 
 jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: swift build
+  test:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: swift test
   podspec:
     runs-on: macOS-latest
     steps:
