@@ -10,5 +10,5 @@ jobs:
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v2
-    - run: gem install cocoapods
-    - run: pod lib lint
+    - run: bundle install
+    - run: bundle exec pod lib lint
