@@ -1,6 +1,7 @@
 import Quick
 import Nimble
 import Ikemen
+import Dispatch
 
 class C {
     var p: Int = 0
