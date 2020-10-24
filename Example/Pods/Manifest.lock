@@ -1,7 +1,7 @@
 PODS:
-  - Nimble (8.0.1)
-  - Quick (2.0.0)
-  - "※ikemen (0.5.0)"
+  - Nimble (8.1.2)
+  - Quick (3.0.0)
+  - "※ikemen (0.6.0)"
 
 DEPENDENCIES:
   - Nimble
@@ -9,7 +9,7 @@ DEPENDENCIES:
   - "※ikemen (from `../`)"
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Nimble
     - Quick
 
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
-  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
-  "※ikemen": 3d258f02636e1964bfb6028f482287c08e23b500
+  Nimble: 3864815b4703c7ebffba875973c70e854489fbae
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
+  "※ikemen": e8d8bbbeaf7ac692b091ea1abc10365947e8ba99
 
-PODFILE CHECKSUM: adc600658bc8d25a4731a6181fca600945a5a19f
+PODFILE CHECKSUM: 7bda7337ce5b3b9c8519efc9fed7efe17560c755
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.10.0
