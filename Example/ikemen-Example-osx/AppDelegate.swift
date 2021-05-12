@@ -20,7 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if let contentView = window.contentView {
             nameField.frame = contentView.bounds
-            nameField.autoresizingMask = [.viewWidthSizable, .viewHeightSizable]
+            nameField.autoresizingMask = [.width, .height]
             contentView.addSubview(nameField)
         }
 

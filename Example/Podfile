@@ -8,6 +8,7 @@ abstract_target 'ikemen' do
     platform :ios, '8.0'
 
     target 'ikemen_Tests' do
+      platform :ios, '9.0'
       inherit! :search_paths
 
       pod 'Quick'
