@@ -7,8 +7,8 @@ let package = Package(
     name: "ikemen",
     products: [.library(name: "Ikemen", targets: ["Ikemen"])],
     dependencies: [
-        .package(url: "https://github.com/Quick/Quick", .upToNextMajor(from: "3.0.0")),
-        .package(url: "https://github.com/Quick/Nimble", .upToNextMajor(from: "8.0.0")),
+        .package(url: "https://github.com/Quick/Quick", .upToNextMajor(from: "4.0.0")),
+        .package(url: "https://github.com/Quick/Nimble", .upToNextMajor(from: "9.0.0")),
     ],
     targets: [
         .target(
