@@ -21,4 +21,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: bundle install
-    - run: bundle exec pod lib lint
+    - run: bundle exec pod lib lint --verbose
