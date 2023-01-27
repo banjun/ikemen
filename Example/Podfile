@@ -5,10 +5,10 @@ abstract_target 'ikemen' do
 
   target 'ikemen_Example' do
     inherit! :complete
-    platform :ios, '8.0'
+    platform :ios, '11.0'
 
     target 'ikemen_Tests' do
-      platform :ios, '9.0'
+      platform :ios, '11.0'
       inherit! :search_paths
 
       pod 'Quick'
@@ -18,7 +18,7 @@ abstract_target 'ikemen' do
 
   target 'ikemen-Example-osx' do
     inherit! :complete
-    platform :osx, '10.11'
+    platform :osx, '10.13'
   end
 end
 

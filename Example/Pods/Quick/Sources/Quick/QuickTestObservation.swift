@@ -54,14 +54,15 @@ extension QuickSpec {
             let classes = UnsafeMutablePointer<AnyClass?>.allocate(capacity: Int(classesCount))
             defer { free(classes) }
 
-            objc_getClassList(AutoreleasingUnsafeMutablePointer(classes), classesCount)
+            let autoreleasingClasses = AutoreleasingUnsafeMutablePointer<AnyClass>(classes)
+            objc_getClassList(autoreleasingClasses, classesCount)
 
             var specSubclasses: [QuickSpec.Type] = []
             for index in 0..<classesCount {
                 guard
                     let subclass = classes[Int(index)],
                     let superclass = class_getSuperclass(subclass),
-                    superclass is QuickSpec.Type
+                    superclass.isSubclass(of: QuickSpec.self)
                     else { continue }
 
                 // swiftlint:disable:next force_cast

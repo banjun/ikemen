@@ -54,7 +54,7 @@ class IkemenSpec: QuickSpec {
                     }
                 }
                 expect(c.p) == 0
-                expect(c.p).toEventually(be(42))
+                expect(c.p).toEventually(equal(42))
             }
         }
 
