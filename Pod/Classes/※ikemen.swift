@@ -4,7 +4,7 @@ precedencegroup IkemenPrecedence {
     higherThan: AssignmentPrecedence
 }
 
-public func ※<T>(value: T, modifier: (inout T) -> ()) -> T {
+@inlinable public func ※<T>(value: T, modifier: (inout T) -> ()) -> T {
     var v = value
     modifier(&v)
     return v
