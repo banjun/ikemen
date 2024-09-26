@@ -11,7 +11,7 @@ struct S {
     var p: Int = 0
 }
 
-func dispatchMainAsync(_ block: @escaping () -> Void) {
+func dispatchMainAsync(_ block: @Sendable @escaping () -> Void) {
     DispatchQueue.main.async(execute: block)
 }
 
@@ -48,7 +48,7 @@ class IkemenSpec: QuickSpec {
         describe("reference type in escaping closure") {
             it("will modify after") {
                 let c = C() ※ { c in
-                    let c = c // Escaping closures can only capture inout parameters explicitly by value
+                    nonisolated(unsafe) let c = c // Escaping closures can only capture inout parameters explicitly by value
                     dispatchMainAsync {
                         c.p = 42
                     }
@@ -66,7 +66,7 @@ class IkemenSpec: QuickSpec {
 //                        s.p = 42
 //                    }
 //                }
-//                expect(s.p).toEventually(be(42))
+//                expect(s.p).toEventually(equal(42))
             }
         }
     }

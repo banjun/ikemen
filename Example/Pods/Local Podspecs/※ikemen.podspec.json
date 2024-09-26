@@ -1,6 +1,6 @@
 {
   "name": "※ikemen",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "module_name": "Ikemen",
   "summary": "Swift way of Ruby Object#tap",
   "description": "Swift way of Ruby Object#tap. for example:\n\nlet nameLabel = UILabel() ※ {$0.text = \"Name\"}",
@@ -11,18 +11,18 @@
   },
   "source": {
     "git": "https://github.com/banjun/ikemen.git",
-    "tag": "0.8.0"
+    "tag": "0.9.0"
   },
   "social_media_url": "https://twitter.com/banjun",
   "platforms": {
-    "ios": "11.0",
+    "ios": "12.0",
     "watchos": "4.0",
     "osx": "10.13"
   },
   "swift_versions": [
-    "5.0"
+    "6.0"
   ],
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
-  "swift_version": "5.0"
+  "swift_version": "6.0"
 }

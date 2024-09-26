@@ -10,7 +10,7 @@ import Cocoa
 import Ikemen
 
 
-@NSApplicationMain
+@main @MainActor
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!

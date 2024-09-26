@@ -1,7 +1,7 @@
 PODS:
   - Nimble (10.0.0)
   - Quick (5.0.1)
-  - "※ikemen (0.8.0)"
+  - "※ikemen (0.9.0)"
 
 DEPENDENCIES:
   - Nimble
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
   Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
-  "※ikemen": dd846bad2317b0ea51e5c7dd8e565108fa40d528
+  "※ikemen": 8aa71bb28b764ff29e70d28b42f25b83a129e02e
 
-PODFILE CHECKSUM: 6d0b06683d733238c03b8c2f8bcbe24a90da058a
+PODFILE CHECKSUM: eea47e7ae5eb68b0e99e88a6840b97db61c361ef
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.15.2
